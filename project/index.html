@@ -3,106 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Samantha Degges - Full Stack Developer</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script>
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
   </head>
-  <body>
+  <body ng-app = "app">
 
-
-
-
-
-
-    <!-- <div class="panel"> -->
-      <div class="contain-to-grid">
-        <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name"><h1><a href="#">Samantha Degges</a></h1></li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-      </ul>
-
-      <!-- Right Nav Section -->
-      <ul class="inline-list right">
-        <li class="active"><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-    <!-- </div> -->
-
-      <div class="row grid">
-        <div class="medium-12 columns">
-        <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4">
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
-          <li>
-            <a data-reveal-id="closeUp"><img src="http://www.placehold.it/400x400" alt=""></img></a>
-          </li>
+  <!-- <div class="panel"> -->
+    <div class="contain-to-grid">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name"><h1><a href="#">Samantha Degges</a></h1></li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
         </ul>
-        </div>
+
+        <!-- Right Nav Section -->
+        <ul class="inline-list right">
+          <li class="active"><a href="#">Portfolio</a></li>
+          <li><a ui-sref="about">About</a></li>
+          <li><a ui-sref="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id = "main">
+      <ui-view></ui-view>
     </div>
 
       <!-- MODALS-->
-
       <div id="closeUp" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
         <h2 id="modalTitle">Awesome. I have it.</h2>
         <p class="lead">Your couch.  It is mine.</p>
@@ -110,8 +45,7 @@
         <a class="close-reveal-modal" aria-label="Close">&#215;</a>
       </div>
 
-
-
+      <!--FOOTER-->
       <footer class="row">
         <div class="large-12 columns">
           <hr/>
@@ -173,9 +107,8 @@
       </row>
     </div> -->
 
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/routes.js"></script>
   </body>
 </html>
