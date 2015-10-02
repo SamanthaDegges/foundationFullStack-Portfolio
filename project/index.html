@@ -17,10 +17,10 @@
   <body ng-app = "app">
 
   <!-- <div class="panel"> -->
-    <div class="contain-to-grid">
+    <div class="contain-to-grid" id="navText">
       <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
-          <li class="name"><h1><a href="#">Samantha Degges</a></h1></li>
+          <li class="name"><h1>Samantha Degges</h1></li>
            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
           <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
         </ul>
@@ -29,7 +29,7 @@
         <ul class="inline-list right">
           <li class="active"><a href="#">Portfolio</a></li>
           <li><a ui-sref="about">About</a></li>
-          <li><a ui-sref="contact">Contact</a></li>
+          <li><a data-reveal-id="contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -39,10 +39,18 @@
     </div>
 
       <!-- MODALS-->
-      <div id="closeUp" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <div id="closeUp" class="reveal-modal" data-reveal aria-labelledby="This is a featured project." aria-hidden="true" role="dialog">
         <h2 id="modalTitle">Awesome. I have it.</h2>
         <p class="lead">Your couch.  It is mine.</p>
         <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      </div>
+
+      <div id="contact" class="reveal-modal text-center" data-reveal aria-labelledby="Contact Me" aria-hidden="true" role="dialog">
+        <h2 id="modalTitle">Say Hi.</h2>
+        <p class="lead">If it's something formal, I prefer email.</p>
+        <p>You can write me at samanthadegges(at)gmail(dot)com <br> or click below to start.</p><br>
+        <a href="mailto:samanthadegges@gmail.com?"><img src="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg" alt=""></a></a>
         <a class="close-reveal-modal" aria-label="Close">&#215;</a>
       </div>
 
