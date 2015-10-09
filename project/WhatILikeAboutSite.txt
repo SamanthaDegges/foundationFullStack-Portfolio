@@ -1,15 +1,15 @@
-Things I like in portfolio sites :
-1) when hoer triggers color and the inactive state is a black and white image
-2) animations! I like animations that are not distracting, and ones that do not occur upon scrolling
-3) i love the parallax effect or the background as a static image.
-4) I like a efective color palette with consistency
-5) i like chunky, balanced, consistent spacing
-6) I like uniqueness, not the standard layout that is sooo "typical" and bootstrappy. It need to be clean and modern but different.
-7) I do not like typical tradiitonal buttons. THeyre boring. I want clear UX and calls to action but noooo default buttons.
+to add :
+1) when hover triggers color and the inactive state is a black and white image
+2) animationsthat are not distracting, and ones that do not occur upon scrolling
+3) a static bg image.
+4) effective color palette with consistency
+5) chunky, balanced, consistent spacing
+6)
+7) 3d logo,or a toggle theme that is seasonal.
 8) mobile responsive to taps or modals.
-9) I like abstract background images or textured interesting images/patterns. No hipster, typical blurred images, or same old stuff.
+9) textured images/patterns.
 10)I really like multipiece and span/responsive footers like the one on herokus website.
-11) I really like sites that are not afraid to be different, that are fun and have imaginative components, liek a 3d logo, a tasteful infographic that is a gif, and a image with a spin on the colors. Sometimes, even a theme that is seasonal, mood based or time-of-day based, can be a fun wacky option on some sites.
+
 
 Example Color Palette (inspired by succulents):
 ALMOST BLACK #04050A / SLATE GRAY #393534 / STONE #827062

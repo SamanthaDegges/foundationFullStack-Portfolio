@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
-
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script>
-    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/foundation/js/foundation.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!-- BACKUP CDNS -->
+    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script> -->
+    <!-- <script src="http://code.angularjs.org/1.2.13/angular.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script> -->
   </head>
   <body ng-app = "app">
 
@@ -40,9 +43,19 @@
 
       <!-- MODALS-->
       <div id="closeUp" class="reveal-modal" data-reveal aria-labelledby="This is a featured project." aria-hidden="true" role="dialog">
-        <h2 id="modalTitle">Awesome. I have it.</h2>
-        <p class="lead">Your couch.  It is mine.</p>
-        <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+        <ul ng-repeat="project in projects">
+          <h2 ng-repeat = "project in projects" id="modalTitle">{{project.title}}</h2>
+          <li><img src="images/cake.png" alt=""></li>
+          <li id = "tools" ng-repeat = "project in projects" class="lead">
+            <strong>Tools Used:</strong>
+            <a href="{{project.tools.link}}">{{project.tools}}</a>
+          </li>
+          <li id = "description" ng-repeat = "project in projects">{{project.description}}</li>
+          <li id="stats" ng-repeat="project in projects">{{project.stats.date}}|{{project.stats.collaborators}}</li>
+
+
+
+        </ul>
         <a class="close-reveal-modal" aria-label="Close">&#215;</a>
       </div>
 
