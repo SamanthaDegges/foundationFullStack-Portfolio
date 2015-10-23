@@ -1,15 +1,14 @@
 $(document).foundation();
 
 $(document).ready(function() {
-  $(".songs li").on("click", function(){
-    $(".songs li").removeClass('active');
-    $(this).toggleClass('active');
+
+  $(".myTabs").on("click", function(){
+    $(".myTabs").removeClass("active");
+    $(this).addClass("active");
   });
+
+  $(".name, #subtitle").on("click", function(){
+    $(".myTabs").removeClass("active");
+    $("#portfolio").addClass("active");
   });
-
-
-
-$('.music-by-type li').on('click', function(){
-  $(".music-by-type li").removeClass('active');
-  $(this).addClass('active');
 });
