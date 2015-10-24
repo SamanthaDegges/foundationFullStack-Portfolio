@@ -11,5 +11,9 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-sass": "~0.18.0",
     "node-sass": "~2.0.1"
+  },
+  "dependencies": {
+    "bower-requirejs": "^1.2.0",
+    "tumblr.js": "0.0.5"
   }
 }

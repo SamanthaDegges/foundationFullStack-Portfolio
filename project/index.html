@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="css/animate.css">
+    <script src="node_modules/requirejs/require.js"></script> <!--SHOULD THIS BE A NPM DEPENDENCY? or npm bower? -->
     <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.js"></script>
@@ -68,7 +69,7 @@
         <h2 id="modalTitle">Say Hi.</h2>
         <p class="lead">If it's something formal, I prefer email.</p>
         <p>You can write me at samanthadegges(at)gmail(dot)com <br> or click below to start.</p><br>
-        <a href="mailto:samanthadegges@gmail.com?"><img src="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg" alt=""></a></a>
+        <a href="mailto:samanthadegges@gmail.com?"><img src="bower_components/foundation-icon-fonts/svgs/fi-mail.svg" alt="Please reach out! Unless you're a creeper."></a></a>
         <a class="close-reveal-modal" aria-label="Close">&#215;</a>
       </div>
 
@@ -79,11 +80,11 @@
           <div class="row">
             <div class="large-12 columns">
               <ul class="inline-list right">
-                <li><a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-social-linkedin.svg" alt=""></a></li>
-                <li><a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-social-github.svg"></a></li>
-                <li><a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-social-tumblr.svg"></a></li>
-                <li><a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-social-twitter.svg"></a></li>
-                <li><a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-social-stack-overflow.svg"></a></li>
+                <li><a href="https://www.linkedin.com/in/samanthadegges"><img src="bower_components/foundation-icon-fonts/svgs/fi-social-linkedin.svg"></a></li>
+                <li><a href="https://github.com/SamanthaDegges"><img src="bower_components/foundation-icon-fonts/svgs/fi-social-github.svg"></a></li>
+                <li><a href="http://samanthadegges.tumblr.com/"><img src="bower_components/foundation-icon-fonts/svgs/fi-social-tumblr.svg"></a></li>
+                <li><a href="https://twitter.com/SamanthaDegges"><img src="bower_components/foundation-icon-fonts/svgs/fi-social-twitter.svg"></a></li>
+                <li><a href="http://stackoverflow.com/users/5053912/samantha"><img src="bower_components/foundation-icon-fonts/svgs/fi-social-stack-overflow.svg"></a></li>
               </ul>
               <div class="large-12 columns" id="footer">
                 <p>© Copyright 2015 Samantha Degges</p>
@@ -93,8 +94,9 @@
         </div>
       </footer>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="bower_components/ng-fastclick/dist/index.min.js"></script>
+    <!-- <script src="bower_components/ng-fastclick/dist/index.min.js"></script> -->
     <script src="js/app.js"></script>
     <script src="js/routes.js"></script>
+    <!-- <script src="node_modules/tumblr.js/lib/tumblr.js"></script> I REQUIRE THIS IN APP.JS-->
   </body>
 </html>
