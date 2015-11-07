@@ -17,3 +17,7 @@ img.grayscale:hover{
   filter: gray;  /* For IE 6 - 9 */
   -webkit-transition: all .6s ease;  /* Transition for Webkit browsers */
 }
+
+#aboutMe{
+  font-size: .75rem;
+}
