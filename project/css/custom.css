@@ -20,4 +20,5 @@ img.grayscale:hover{
 
 #aboutMe{
   font-size: .75rem;
+  max-width: 500px;
 }
